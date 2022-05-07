@@ -1,0 +1,49 @@
+{
+  "Routes": [
+    //----------------------BasketAPI----------------------
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "basket",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7117
+        }
+      ],
+      "UpstreamPathTemplate": "/basket/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/basket/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7117
+        }
+      ],
+      "UpstreamPathTemplate": "/basket/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/basket/{id}/{value}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7117
+        }
+      ],
+      "UpstreamPathTemplate": "/basket/{id}/{value}",
+      "UpstreamHttpMethod": [ "POST", "DELETE" ]
+    }
+  ]
+
+}
+

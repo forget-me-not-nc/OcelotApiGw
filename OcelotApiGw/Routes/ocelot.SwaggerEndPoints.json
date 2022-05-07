@@ -1,0 +1,59 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "ocelot",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "OcelotApiGw",
+          "Version": "1.0",
+          "Url": "http://localhost:5064/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "archive",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Archive.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5064/archive/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "data",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Data.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5064/data/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "basket",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Basket.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5064/basket/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "auth",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Authenticate.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5064/authenticate/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
